@@ -27,11 +27,14 @@ body {
 
 @media (max-width: 600px) {
   #container-pergaminho {
-    background-size: contain;
-    width: 90vw;
+    background: none !important; /* Remove o pergaminho */
+    background-color: rgba(255, 248, 230, 0.92); /* Fundo claro com leve transparência */
+    width: 95vw;
     height: auto;
-    padding: 40px 15px;
+    padding: 40px 20px;
     transform: translateY(290px);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 
   h1, h2 {
