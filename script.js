@@ -57,7 +57,7 @@ let perguntas = [
   },
   {
     pergunta: "Quem subiu ao céu num redemoinho de fogo?",
-    opcoes: ["Moisés", "Elias", "Henoc", "Samuel", "Eliseu"],
+    opcoes: ["Moisés", "Elias", "Enoque", "Samuel", "Eliseu"],
     correta: 1,
     versiculo: "2 Reis 2:11",
     curiosidade: "Elias foi levado por um carro de fogo diante de Eliseu."
@@ -190,10 +190,10 @@ let perguntas = [
   },
   {
     pergunta: "Quem foi levado ao céu sem experimentar a morte?",
-    opcoes: ["Elias", "Moisés", "João Batista", "Henoc", "Paulo"],
+    opcoes: ["Elias", "Moisés", "João Batista", "Enoque", "Paulo"],
     correta: 3,
     versiculo: "Gênesis 5:24",
-    curiosidade: "Henoc andava com Deus e foi tomado por Ele — desapareceu da terra!"
+    curiosidade: "Enoque andava com Deus e foi tomado por Ele — desapareceu da terra!"
   },
   {
     pergunta: "Quem desafiou os profetas de Baal no monte Carmelo?",
