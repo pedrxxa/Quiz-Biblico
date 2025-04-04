@@ -1,3 +1,4 @@
+
 body { 
   margin: 0;
   font-family: 'Georgia', serif;
@@ -10,20 +11,50 @@ body {
 
 /* Novo contêiner do pergaminho */
 #container-pergaminho {
-  background: url('imagens/pergaminho-textura.png') center/contain no-repeat;
+  background: url('imagens/pergaminho-textura.png') center/100% 100% no-repeat;
   background-color: transparent;
-  padding: 80px 60px;
-  max-width: 900px;
-  height: 1100px; /* Aproveitando bem a imagem */
-  margin: 60px auto;
+  padding: 60px 40px;
+  width: 700px;
+  height: 510px;
+  margin: 0 auto;
   text-align: center;
-  border: none;
-  box-shadow: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  transform: translateY(15px);
+}
+
+@media (max-width: 600px) {
+  #container-pergaminho {
+    background-size: cover;
+    width: 95vw;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.3em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px 18px;
+  }
+
+  #pergunta {
+    font-size: 1.1em;
+  }
+
+  #opcoes button {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Telas ocultas e ativas */
@@ -80,8 +111,15 @@ button:hover {
 }
 
 /* AJUSTE DE TAMANHO DOS BOTÕES DO QUIZ */
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #opcoes button {
-  width: 100%;
+  width: 320px;
+  max-width: 90%;
   margin: 5px 0;
   font-size: 1.05em;
   padding: 12px;
