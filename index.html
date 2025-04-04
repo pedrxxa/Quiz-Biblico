@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Bíblico - O Tesouro das Escrituras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="musicaFundo" src="sons/harpa.mp3" loop autoplay></audio>
+  <audio id="somAcerto" src="sons/acerto.mp3"></audio>
+  <audio id="somErro" src="sons/erro.mp3"></audio>
+
+  <div id="container-pergaminho">
+    <div id="menu" class="tela ativa">
+      <h1><span class="iconPergaminho">📜</span> Quiz Bíblico</h1>
+      <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+      <button onclick="mostrarInstrucoes()">Instruções</button>
+      <button onclick="mostrarVersiculos()">Versículos Memoráveis</button>
+      <button onclick="mostrarCreditos()">Créditos</button>
+    </div>
+
+    <div id="quiz" class="tela">
+      <div class="topo">
+        <div id="vidas"></div>
+        <div id="pontos">Pontos: 0</div>
+      </div>
+      <div id="perguntaContainer">
+        <h2 id="pergunta"></h2>
+        <div id="opcoes"></div>
+      </div>
+      <div id="versiculoBox" class="caixa-versiculo"></div>
+      <button id="btnProxima" onclick="proximaPergunta()" style="display:none;">Próxima Pergunta</button>
+    </div>
+
+    <div id="final" class="tela">
+      <h2 id="mensagemFinal"></h2>
+      <p id="versiculoFinal"></p>
+      <button onclick="reiniciarQuiz()">Jogar Novamente</button>
+    </div>
+
+    <div id="extras" class="tela">
+      <div id="conteudoExtra"></div>
+      <button onclick="voltarMenu()">Voltar ao Menu</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

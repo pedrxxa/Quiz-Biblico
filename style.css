@@ -1,0 +1,160 @@
+body { 
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-image: url("imagens/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #2c1d0e;
+}
+
+/* Novo contêiner do pergaminho */
+#container-pergaminho {
+  background: url('imagens/pergaminho-textura.png') center/contain no-repeat;
+  background-color: transparent;
+  padding: 80px 60px;
+  max-width: 900px;
+  height: 1100px; /* Aproveitando bem a imagem */
+  margin: 60px auto;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Telas ocultas e ativas */
+.tela {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tela.ativa {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  opacity: 1;
+}
+
+h1, h2 {
+  font-family: 'Palatino Linotype', serif;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: #dcc68b;
+  border: 2px solid #8b5e3c;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cbb074;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* AJUSTE DE TAMANHO DOS BOTÕES DO QUIZ */
+#opcoes button {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.05em;
+  padding: 12px;
+}
+
+/* AJUSTE DE TAMANHO DO TÍTULO DA PERGUNTA */
+#pergunta {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.caixa-versiculo {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f0da;
+  border: 2px solid #b99867;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+#mensagemFinal {
+  font-size: 1.4em;
+  color: #462b10;
+}
+
+#versiculoFinal {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#vidas {
+  font-size: 1.2em;
+}
+
+/* AJUSTE FINAL — CENTRALIZAÇÃO DO MENU */
+#menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo do título do menu */
+#menu h1 {
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+  color: #4a3b1f;
+  margin-bottom: 20px;
+}
+
+/* Botões do menu */
+#menu button {
+  background-color: #f5e4c3;
+  border: 1px solid #c9a874;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a3b1f;
+  margin: 6px 0;
+  width: 70%;
+  max-width: 250px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background-color: #e3d0ac;
+  transform: scale(1.03);
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
